@@ -52,6 +52,31 @@ p {
   padding: 0 1rem;
 }
 
+footer {
+  text-align: center;
+  background-color: #052b45;
+  padding: 1.5em 20%;
+}
+
+a {
+  color: white;
+}
+
+h2 {
+  color: white;
+  margin-top: 0;
+}
+
+.soc {
+  display: inline-block;
+  align: center;
+}
+
+.svg {
+  width: 10%;
+  height: auto;
+}
+
 @media only screen and (min-width: 35em) {
 
 }
