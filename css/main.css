@@ -6,14 +6,13 @@
 
 html {
   box-sizing: border-box;
-  box-sizing: border-box;
   background-color: #f4f4f4;
   font-weight: lighter;
   font-family: 'Merriweather', serif;
 }
 
 *, *::before, *::after {
-  box sizing: inherit;
+  box-sizing: inherit;
 }
 
 html {
@@ -77,6 +76,7 @@ h2 {
 }
 
 .svg:hover {
+  -webkit-transform: scale(1.5);
   transform: scale(1.5);
 }
 
@@ -120,6 +120,7 @@ a {
 }
 
 .img:hover {
+  -webkit-transform: scale(1.2);
   transform: scale(1.2);
 }
 
@@ -218,7 +219,7 @@ a {
   .img {
     width: 70%;
   }
-
+}
   @media only screen and (min-width: 56em) {
 
     html {
@@ -241,13 +242,14 @@ a {
     .img {
       width: 75%;
     }
-
+}
     @media print {
 
       html {
         width: 3.5in;
         height: 2in;
         margin: 0;
+        border: 1px solid black;
       }
 
       nav {
