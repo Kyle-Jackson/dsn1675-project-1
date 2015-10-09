@@ -124,15 +124,15 @@ a {
 }
 
 .imgs a {
-  display: inline-block;
+  display: -block;
 }
 
 .imgs {
   margin: 0;
-  padding: 0;
   list-style-type: none;
   text-align: center;
-  padding-bottom: 1.25em;
+  padding: 1.25em 0;
+
 }
 
 .imgs li {
@@ -215,6 +215,79 @@ a {
     padding-bottom: 0em;
   }
 
-  @media only screen and (min-width: 50em) {
+  .img {
+    width: 70%;
+  }
 
+  @media only screen and (min-width: 56em) {
+
+    html {
+      font-size: 130%;
+      line-height: 1.6;
+    }
+
+    p {
+      padding: 0 6em;
+    }
+
+    h1 {
+      margin: 0
+    }
+
+    .me {
+      margin-bottom: 2em
+    }
+
+    .img {
+      width: 75%;
+    }
+
+    @media print {
+
+      html {
+        width: 3.5in;
+        height: 2in;
+        margin: 0;
+      }
+
+      nav {
+        display: none;
+      }
+
+      main a::after {
+        content: " (" attr(href) ")";
+        color: #999;
+      }
+
+      img {
+        display: none;
+      }
+
+      p {
+        display: none;
+      }
+
+      header {
+        background-image: none;
+      }
+
+      .head {
+        padding: 0em;
+      }
+
+      .me {
+        display: inline-block;
+        width: 25%;
+        margin: 1em;
+      }
+
+      h1 {
+        display: inline-block;
+        color: black;
+        font-size: 1rem
+      }
+
+      h2 {
+        display: none;
+      }
 }
