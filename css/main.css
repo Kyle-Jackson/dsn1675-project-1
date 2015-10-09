@@ -73,6 +73,11 @@ h2 {
 .svg {
   width: 85%;
   height: auto;
+  transition: all .2s ease-in-out;
+}
+
+.svg:hover {
+  transform: scale(1.5);
 }
 
 .nav {
@@ -109,6 +114,63 @@ a {
   text-decoration: none;
 }
 
-@media only screen and (min-width: 35em) {
+@media only screen and (min-width: 31em) {
+
+  html {
+    font-size: 110%;
+    line-height: 1.4;
+  }
+
+  p {
+    padding: 0 2em;
+  }
+
+  .svg {
+    width: 65%;
+    height: auto;
+  }
+
+}
+
+@media only screen and (min-width: 37em) {
+
+  p {
+    padding: 0 4em;
+  }
+
+  .me {
+      margin-top: 4%;
+      border-radius: 80px;
+  }
+
+  h1 {
+    margin-top: 0.25em;
+  }
+
+}
+
+@media only screen and (min-width: 43em) {
+
+  html {
+    font-size: 120%;
+    line-height: 1.5;
+  }
+
+  h1 {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0;
+  }
+
+  .me {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 2em;
+    width: 12%;
+  }
+
+  .head {
+    padding-left: 4em;
+  }
 
 }
