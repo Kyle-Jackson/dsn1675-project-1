@@ -162,7 +162,7 @@ a {
 @media only screen and (min-width: 37em) {
 
   p {
-    padding: 0 4em;
+    padding: 0 6em;
   }
 
   .me {
@@ -228,7 +228,7 @@ a {
     }
 
     p {
-      padding: 0 6em;
+      padding: 0 10em;
     }
 
     h1 {
@@ -236,7 +236,8 @@ a {
     }
 
     .me {
-      margin-bottom: 2em
+      margin-bottom: 2em;
+      margin-left: 6em;
     }
 
     .img {
@@ -249,6 +250,7 @@ a {
         width: 3.5in;
         height: 2in;
         margin: 0;
+        padding: 0;
         border: 1px solid black;
       }
 
